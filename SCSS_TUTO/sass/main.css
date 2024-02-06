@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: blue;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(80% - 40px);
+  margin: 0 auto;
+}
+.main .main__paragraph1, .main .main__paragraph2 {
+  font-weight: 500;
+}
+.main .main__paragraph1:hover, .main .main__paragraph2:hover {
+  color: pink;
+}
+.main .main__paragraph2:hover {
+  color: red;
+}
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.light {
+  background: white;
+  color: black;
+}
+
+/*
+// & equal the parents
+// __ target the parents before all the children
+*//*# sourceMappingURL=main.css.map */
